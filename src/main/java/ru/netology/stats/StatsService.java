@@ -10,10 +10,7 @@ public class StatsService {
     }
 
     public long findMiddle(long[] profits) {
-        long sum = 0;
-        for (long profit : profits) {
-            sum += profit;
-        }
+        long sum = calculateSum(profits);
         long middle = sum / 12;
         return middle;
     }
